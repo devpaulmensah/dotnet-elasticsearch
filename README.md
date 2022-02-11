@@ -2,7 +2,7 @@
 
 This is an api which allows users to search for apartments or management companies
 
-```c#
+```
 # Setup Elasticsearch
 Setup elasticsearch(v7.10) on AWS with the free tier or setup elasticsearch in docker
 AWS => https://aws.amazon.com/opensearch-service/
@@ -15,5 +15,5 @@ Update elasticsearch BaseUrl with your baseurl from AWS or docker
 $ dotnet restore
 
 # Upload demo file
-Upload demo files in docs via the upload api endpoints and start searching... 
+Upload demo files in docs via the upload api endpoints and start searching...
 ```
