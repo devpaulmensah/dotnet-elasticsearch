@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3CEF3C61-2065-47B2-A77F-06E16C9CAC94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartApartmentData.Search.Api", "src\SmartApartmentData.Search.Api\SmartApartmentData.Search.Api.csproj", "{88061393-F037-4D41-8859-230BB7F37034}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88061393-F037-4D41-8859-230BB7F37034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88061393-F037-4D41-8859-230BB7F37034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88061393-F037-4D41-8859-230BB7F37034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88061393-F037-4D41-8859-230BB7F37034}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88061393-F037-4D41-8859-230BB7F37034} = {3CEF3C61-2065-47B2-A77F-06E16C9CAC94}
+	EndGlobalSection
+EndGlobal
