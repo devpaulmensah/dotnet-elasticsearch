@@ -71,8 +71,8 @@ public class ElasticSearchService : IElasticSearchService
         }
         catch (Exception e)
         {
-            _logger.LogError(e, "An error occured searching for properties" +
-                                $"\nSearchRequest: {JsonConvert.SerializeObject(request, Formatting.Indented)}");
+            _logger.LogError(e, "An error occured searching for properties\nSearchRequest:{request}", 
+                JsonConvert.SerializeObject(request, Formatting.Indented));
 
             return CommonResponses.ErrorResponse.InternalServerErrorResponse<SearchBaseResponse<dynamic>>();
         }

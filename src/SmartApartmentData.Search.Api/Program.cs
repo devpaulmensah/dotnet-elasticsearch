@@ -5,7 +5,6 @@ using SmartDataApartment.Search.Api.ServiceExtensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCustomServicesAndConfigurations(builder.Configuration);
 builder.Services.InitializeElasticSearch(new ElasticSearchConfig

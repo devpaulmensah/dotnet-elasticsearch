@@ -15,7 +15,7 @@ public class AllowedFileExtensionAttribute : ValidationAttribute
     {
         var file = value as IFormFile;
 
-        if (file != null)
+        if (file is not null)
         {
             var fileExtension = Path.GetExtension(file.FileName);
             if (!_extensions.Contains(fileExtension.ToLower()))

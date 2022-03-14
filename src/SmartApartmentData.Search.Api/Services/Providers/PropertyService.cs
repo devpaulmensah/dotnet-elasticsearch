@@ -32,13 +32,13 @@ public class PropertyService : IPropertyService
             {
                 var propertiesList = JsonConvert.DeserializeObject<List<PropertyUploadRequest>>(content);
 
-                if (propertiesList == null || !propertiesList.Any())
+                if (propertiesList is null || !propertiesList.Any())
                 {
                     return CommonResponses.ErrorResponse
                         .BadRequestResponse<NoDataResponse>("File empty");
                 }
                 
-                if (propertiesList.Any(p => p.Property?.PropertyId == null))
+                if (propertiesList.Any(p => p.Property?.PropertyId is null))
                 {
                     return CommonResponses.ErrorResponse
                         .BadRequestResponse<NoDataResponse>("Provide data that matches specification for properties");

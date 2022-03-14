@@ -33,13 +33,13 @@ public class ManagementCompanyService : IManagementCompanyService
                 var managementCompanyList =
                     JsonConvert.DeserializeObject<List<ManagementCompanyUploadRequest>>(content);
 
-                if (managementCompanyList == null || !managementCompanyList.Any())
+                if (managementCompanyList is null || !managementCompanyList.Any())
                 {
                     return CommonResponses.ErrorResponse
                         .BadRequestResponse<NoDataResponse>("File empty");
                 }
                 
-                if (managementCompanyList.Any(m => m.ManagementCompany?.ManagementId == null))
+                if (managementCompanyList.Any(m => m.ManagementCompany?.ManagementId is null))
                 {
                     return CommonResponses.ErrorResponse
                         .BadRequestResponse<NoDataResponse>("Provide data that matches specification for management companies");

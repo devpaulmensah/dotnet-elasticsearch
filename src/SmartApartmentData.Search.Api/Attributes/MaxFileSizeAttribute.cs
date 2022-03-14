@@ -15,7 +15,7 @@ public class MaxFileSizeAttribute : ValidationAttribute
     {
         var file = value as IFormFile;
 
-        if (file != null)
+        if (file is not null)
         {
             var fileSize = file.Length;
             if (fileSize > _maxFileSize) return new ValidationResult("Maximum file size allowed is 20MB");
